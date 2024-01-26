@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homevpn.css">
+    <title>Setting up a VPN on Raspberry Pi with WireGuard</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title-page">Setting up a VPN on Raspberry Pi with WireGuard</h1>
+        
+        <h2>Introduction</h2>
+        <p>These are the steps I took in setting up a Virtual Private Network on a Raspberry Pi using WireGuard. I will also discuss the benefits and risks of running a VPN on your home connection.</p>
+        
+        <h2>Benefits of Running a VPN on Your Home Connection</h2>
+        <p>Running a VPN on your home connection offers several benefits:</p>
+        <ul>
+            <li><strong>Enhanced Security:</strong> A VPN encrypts your internet traffic, routing it through your home network; providing an additional layer of security and protecting your data from potential threats when away from home. Note that since we are routing traffic through the home network, your ISP will still be able to see what websites you visit. So if this is something that concerns you, a paid (and "trusted") provider may be a better option. <a href="https://mullvad.net/en/why-mullvad-vpn">Mullvad</a> is a solid choice.</li>
+            <li><strong>Access to Restricted Content:</strong> With a VPN, you can access content that may be blocked when you are abroad. The benefit of this setup over using a paid VPN provider, is that some streaming services use blocklists to block common VPN's.</li>
+            <li><strong>Secure Remote Access:</strong> A VPN allows you to securely access your home network and devices from anywhere in the world.</li>
+        </ul>
+        
+        <h2>Risks of Running a VPN on Your Home Connection</h2>
+        <p>While running a VPN on your home connection offers benefits, it's important to be aware of the risks:</p>
+        <ul>
+            <li><strong>Increased Attack Surface:</strong> Running a VPN on your home connection increases your attack surface, making your network more vulnerable. More specifically, opening ports or "portforwarding" inherently increases risk. Some precautions I recommend is disabling root login over SSH and (if possible) creating a VLAN specifically for the raspberry Pi.</li>
+            <li><strong>Increased Power Consumption:</strong> Running a VPN permanently on your home connection will increase your power consumption, which may impact your electricity bill (though this is minimal with a raspberry pi). You can always turn it off if you don't intend to use it.</li>
+        </ul>
+        
+        <h2>Steps to Set up a VPN on Raspberry Pi with WireGuard + PiHole</h2>
+        <ol>
+            <li>Install Raspbian OS on Raspberry Pi</li>
+            <li>Connect Raspberry Pi to the network</li>
+            <li>Configure static IP address for Raspberry Pi</li>
+            <li>Install and configure PiHole on Raspberry Pi</li>
+            <li>Pick DNS of your choice</li>
+            <li>Install and configure WireGuard on Raspberry Pi</li>
+            <li>Generate SSL/TLS certificates and keys</li>
+            <li>Configure WireGuard server and client settings</li>
+            <li>Set up port forwarding on your router</li>
+            <li>Connect to your VPN from client devices</li>
+        </ol>
+    </div>
+</body>
+</html>

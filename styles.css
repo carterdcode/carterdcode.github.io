@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 43, 44);
+}
+
+#icon-container {
+    position: fixed;
+    width: 100%;
+    height: 3.5%;
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+#icon-container img{
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: fill;
+    transition: transform 0.2s ease-in-out;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+#icon-container img:hover {
+    transform: scale(1.2);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    padding-top: 50px;
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 1px;
+    text-align: center;
+    font-family: 'Courier new', monospace; 
+    animation: zoom-in-out ease 2s;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scaleX(0.9);
+    }
+    50% {
+        transform: scaleX(1.1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+#about-me {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-height: 5vh;
+}
+
+
+
+#about-me-content p {
+    font-style: bold;
+    text-align: center;
+}
+
+
+#about-me-content p {
+    width: 60vw;
+    height: 100vh;
+    font-size: 3vh;
+    font-family: 'Courier new', monospace; 
+    font-style: italic;
+}
+
+.separator {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-bottom: double 5px rgb(79, 79, 79);
+    border-top: double 5px rgb(79, 79, 79);
+    border-radius: 10px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+
+.separator h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 2px;
+    text-align: center;
+    font-family: 'Courier new', monospace; 
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*padding: 10px;*/
+}
+
+.project {
+    text-align: center;
+    border: #000000 2px dotted;
+}
+
+.project a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.project img {
+    min-width: 90px;
+    min-height: 80px;
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: fill;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1.03);
+}
+
+.project h2 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: medium;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project h2:hover {
+    transform: scale(1.03);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 44px;
+}
+
+.projects .project {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+#Skills h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 2px;
+    text-align: center;
+    font-family: 'Courier new', monospace; 
+}
+.skills-interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 44px;
+    font-family: 'Courier new', monospace; 
+}
+
+#skill-interest {
+    min-width: 100px;
+    max-width: 30vw;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: #000000 2px dotted; 
+    border-radius: 10px;
+    font-size: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 2px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#skill-interest h3 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: medium;
+    transition: transform 0.2s ease-in-out;
+}
